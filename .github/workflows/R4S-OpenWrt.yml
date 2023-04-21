@@ -54,6 +54,7 @@ jobs:
         cd openwrt
         cp -r ../SCRIPTS/. ./
         /bin/bash 02_prepare_package.sh
+        /bin/bash patch.sh
         /bin/bash 02_target_only.sh
         /bin/bash 04_remove_upx.sh
     - name: QTMDFW4
